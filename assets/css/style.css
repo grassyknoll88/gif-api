@@ -1,0 +1,75 @@
+body {
+    background: url(../images/footer_lodyas.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 35px;
+}
+
+#newShowInput {
+    margin: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-box-shadow: 5px 5px 0 #666;
+}
+
+#labelText {
+    color: #F65958;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: -1px -1px 1px #666;
+}
+
+ .showBtn {
+    background-color: #F65958;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: -1px -1px 1px #616161;
+    position: relative;
+    padding: 15px 30px;
+    -webkit-box-shadow: 5px 5px 0 #666;
+    -moz-box-shadow: 5px 5px 0 #666;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    margin: 0 10px 0 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .showBtn:hover {
+    -webkit-box-shadow: 0px 0px 0 #666;
+    -moz-box-shadow: 0px 0px 0 #666;
+    top: 5px;
+    left: 5px;
+  } 
+
+  #addShow {
+    background-color: #F65958;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: -1px -1px 1px #616161;
+    position: relative;
+    padding: 5px 10px;
+    -webkit-box-shadow: 2px 2px 0 #666;
+    -moz-box-shadow: 2px 2px 0 #666;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    margin: 0 10px 0 0;
+    margin: 20px;
+  }
+
+  #addShow:hover {
+    -webkit-box-shadow: 0px 0px 0 #666;
+    -moz-box-shadow: 0px 0px 0 #666;
+    top: 3px;
+    left: 3px;
+  }
+
+ 
+
+
+
+
