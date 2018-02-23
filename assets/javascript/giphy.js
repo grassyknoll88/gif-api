@@ -35,7 +35,7 @@ function createButtons() {
 			"http://api.giphy.com/v1/gifs/search" +
 			thisShow +
 			"&limit=10&api_key=VqbG1fTNAeDDTWPxPdaDC6nCFb09FrXG";
-		$.ajax({ url: queryURL, method: 'GET' }).done(function(giphy) {
+		$.ajax({ url: queryURL, method: 'GET' }).then(function(giphy) {
 			currentGif = giphy.data;
 			$.each(currentGif, function(index, value) {
 				animatedGif = value.images.original.url;
