@@ -17,23 +17,23 @@ var staticGif;
 
 //creates buttons from array
 function createButtons() {
-	$("#TVButtons").empty();
+	$("#characterButtons").empty();
 	for (var i = 0; i < character.length; i++) {
-		var showBtn = $("<button>")
+		var officeBtn = $("<button>")
 			.text(character[i])
-			.addClass("showBtn")
+			.addClass("officeBtn")
 			.attr({ "data-name": character[i] });
-		$("#TVButtons").append(showBtn);
+		$("#characterButtons").append(officeBtn);
 	}
 
 	//displays gifs on click
-	$(".showBtn").on("click", function() {
+	$(".officeBtn").on("click", function() {
 		$(".display").empty();
 
 
 		var thisCharacter = $(this).data("name");
 		var queryURL =
-			"http://api.giphy.com/v1/gifs/search?q=" +
+			"https://api.giphy.com/v1/gifs/search?q=" +
 			thisCharacter +
 			"&limit=10&api_key=VqbG1fTNAeDDTWPxPdaDC6nCFb09FrXG";
 		$.ajax({ url: queryURL, method: 'GET' }).then(function(giphy) {
@@ -54,7 +54,7 @@ function createButtons() {
 					.attr("src", pausedGif)
 					.attr("data-state", "paused")
 				var fullGifDisplay = $("<button>").append(rating, staticGif);
-				$('.display').append(fullGifDisplay);
+				$(".display").append(fullGifDisplay);
 			});
 			//animates and pauses gif on click
 			$('.gif').on("click", function() {
@@ -72,12 +72,12 @@ function createButtons() {
 }
 
 //generates a button from input
-$("#addShow").on("click", function() {
+$("#addCharacter").on("click", function() {
 	if($("#newCharacterInput").val().length > 0){
 		var newCharacter = $("#newCharacterInput").val().trim();
 		character.push(newCharacter);
 		createButtons();
-		$("#nnewCharacterInput").val("");
+		$("#newCharacterInput").val("");
 		return false;
 		
 	};
