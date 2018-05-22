@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# Office Gif- API 
 
-You can use the [editor on GitHub](https://github.com/grassyknoll88/gif-api/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Overview
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In this assignment, we used use the GIPHY API to make a dynamic web page that populates with gifs of our choice. To finish this task, we  called the GIPHY API and used JavaScript and jQuery to change the HTML of your site.   
 
-### Markdown
+### Requirements
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Before you can make any part of our site work, you need to create an array of strings, each one related to a topic that interests you. Save it to a variable called topics.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+We chose animals for our theme, but you can make a list to your own liking.
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+Your app should take the topics in this array and create buttons in your HTML.
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Try using a loop that appends a button for each string in the array.
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/grassyknoll88/gif-api/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+When the user clicks on a button, the page should grab 10 static, non-animated gif images from the GIPHY API and place them on the page.
+When the user clicks one of the still GIPHY images, the gif should animate. If the user clicks the gif again, it should stop playing.
 
-### Support or Contact
+Under every gif, display its rating (PG, G, so on).
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+This data is provided by the GIPHY API.
+Only once you get images displaying with button presses should you move on to the next step.
+
+
+Add a form to your page takes the value from a user input box and adds it into your topics array. Then make a function call that takes each topic in the array remakes the buttons on the page.
+Deploy your assignment to Github Pages.
+Rejoice! You just made something really cool.
